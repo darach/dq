@@ -108,4 +108,10 @@ the other cluster nodes to operate on it:
 (jill@darach)7>
 ```
 
+## TODO
+
+1. Make merge function replaceable
+2. Resolve travis common test issues
+3. Priority queue option
+
 ## Enjoy!
