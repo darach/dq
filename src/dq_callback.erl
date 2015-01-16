@@ -42,6 +42,8 @@
 %% for testing
 -export([merge_cand_states/2]).
 
+-type queue() :: any().
+
 -record(state, {
   am_leader = false :: boolean(),
   queue = undefined :: undefined | queue()
