@@ -1,0 +1,4 @@
+%% encoding: UTF-8
+{application,dq}.
+{packages,[]}.
+{modules,[dq,dq_callback]}.

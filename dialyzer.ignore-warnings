@@ -1,0 +1,12 @@
+dbg:p/2
+dbg:tpl/2
+dbg:tracer/0
+erlang:get_module_info/1
+erlang:get_module_info/2
+locks_leader:ask_candidates/2
+locks_leader:info/1
+locks_leader:leader_call/3
+locks_leader:new_candidates/1
+locks_leader:start_link/2
+locks_leader:start_link/4
+locks_leader:leader_info/0
