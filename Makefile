@@ -21,7 +21,7 @@ dialyze: buildplt
         -r ebin --src src \
         | grep -v -f ./dialyzer.ignore-warnings
 
-test: build dialyze
+test: build
 	@mkdir -p .eunit
 	$(REBAR) skip_deps=true eunit ct
 

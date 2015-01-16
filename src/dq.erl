@@ -66,6 +66,7 @@
 
 -opaque dq() :: pid().
 -type item() :: any().
+-type queue() :: any().
 
 -export_type([dq/0]).
 -export_type([item/0]).
