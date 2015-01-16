@@ -30,9 +30,13 @@
 -export([all/0]).
 -export([suite/0]).
 -export([init_per_suite/1]).
+-export([end_per_suite/1]).
 -export([groups/0]).
 
--compile(export_all).
+-export([t_new_anon/1]).
+-export([t_new_named/1]).
+-export([t_usage/1]).
+-export([t_netsplitheal/1]).
 
 -include_lib("common_test/include/ct.hrl").
 
