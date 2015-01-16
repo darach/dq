@@ -22,12 +22,11 @@ dialyze: buildplt
         | grep -v -f ./dialyzer.ignore-warnings
 
 test: build
-	@mkdir -p .eunit
-	$(REBAR) skip_deps=true eunit ct
+	$(REBAR) skip_deps=true ct
 
 clean:
 	$(REBAR) clean
-	-rm -rvf deps ebin doc .eunit
+	-rm -rvf deps ebin doc
 
 doc:
 	$(REBAR) doc
