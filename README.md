@@ -1,4 +1,4 @@
-# **dq**  [![Build Status](https://travis-ci.org/darach/dq.png)](https://travis-ci.org/darach/dq)
+# **dq**
 
 > Distributed Fault Tolerant Queue
 
