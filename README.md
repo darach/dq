@@ -114,4 +114,13 @@ the other cluster nodes to operate on it:
 2. Resolve travis common test issues
 3. Priority queue option
 
+## NOTES
+
+* It is not enough to run distributed erlang nodes. They must also be connected.
+* The locks application must be running on at least 2 nodes...
+  * Calling erlang:disconnect_node/1 on a 2 node cluster is not supported by locks 
+  * Calling dq:&lt;fun&gt;/&lt;arity&gt; on a >1 node cluster with locks running on a single node will fail
+  * Calling dq:&lt;fun&gt;/&lt;arity&gt; on a 1 node cluster with locks running on a single node will succeed
+* Any queue state in a local queue before being adjoined to a cluster will be lost (not merged)
+
 ## Enjoy!
